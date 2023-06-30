@@ -1,0 +1,30 @@
+.mynav {
+  width: 50%;
+  user-select: none !important;
+  margin-left: auto;
+}
+
+.mynav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+.mynav ul li{
+  padding: 5px 20px;
+  user-select: none;
+}
+.mynav ul li a{
+  text-decoration: dashed;
+  color: black;
+}
+.mynav ul li:hover{
+  background-color: coral;
+  .myAnchor{
+    color: #ffff;
+  }
+  align-items: center;
+  border-radius: 15px;
+}
