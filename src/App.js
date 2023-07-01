@@ -9,6 +9,7 @@ function App() {
       <div>
         <NavBar/>
         <SelectTag/>
+        {/* this was my first react app */}
         <h1>My first react App</h1>
         <MyButton />
       </div>
