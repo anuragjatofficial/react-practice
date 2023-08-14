@@ -10,7 +10,6 @@ function App() {
         <NavBar/>
         <SelectTag/>
         <Card/>
-        {/* this was my first react app */}
         <h1>My first react App</h1>
         <MyButton />
       </div>
