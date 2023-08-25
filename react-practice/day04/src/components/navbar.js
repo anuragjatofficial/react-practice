@@ -1,6 +1,7 @@
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import { Button, ButtonGroup } from '@chakra-ui/react'
 import React from "react";
+import { Tab } from "./tab";
 class NavBar extends React.Component{
     render(){
         return(
@@ -14,13 +15,13 @@ class NavBar extends React.Component{
 
                     <TabPanels>
                         <TabPanel>
-                            <p>one!</p>
+                            <Tab/>
                         </TabPanel>
                         <TabPanel>
-                            <p>two!</p>
+                            <Tab />
                         </TabPanel>
                         <TabPanel>
-                            <p>three!</p>
+                            <Tab />
                         </TabPanel>
                     </TabPanels>
                 </Tabs>
