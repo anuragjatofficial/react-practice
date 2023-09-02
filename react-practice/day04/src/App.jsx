@@ -15,15 +15,20 @@ import {
 import { MyTable } from './components/table';
 import { MyTab } from './components/myTab';
 import ToastStatusExample from './components/ToastStatusExample';
+import Login from './components/Login';
 
 export default function App() {
   return (
     <ChakraProvider>
-      <div style={{ width: '500px', height: '500px' }}>
+      {/* <div style={{ width: '500px', height: '500px' }}>
         <ToastStatusExample />
+        <FormLabel>
+          <Input type='color'/>
+        </FormLabel>
         <MyTab />
       </div>
-      {/* <MyTable /> */}
+      <MyTable /> */}
+      <Login/>
     </ChakraProvider>
   );
 }

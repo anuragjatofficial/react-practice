@@ -1,10 +1,10 @@
-
-import React from 'react'
-import { 
+import React from 'react';
+import {
   useToast,
   Button,
   WrapItem,
-  Wrap
+  Wrap,
+  CircularProgress,
 } from '@chakra-ui/react';
 
 export default function ToastStatusExample() {
@@ -12,23 +12,28 @@ export default function ToastStatusExample() {
   const statuses = ['success', 'error', 'warning', 'info'];
 
   return (
-    <Wrap>
-      {statuses.map((status, i) => (
-        <WrapItem key={i}>
-          <Button
-            onClick={() =>
-              toast({
-                title: `${status} toast`,
-                status: status,
-                position: 'top',
-                isClosable: true,
-              })
-            }
-          >
-            Show {status} toast
-          </Button>
-        </WrapItem>
-      ))}
-    </Wrap>
+    <>
+      <CircularProgress isIndeterminate color="green.300" />
+      <Wrap>
+        {statuses.map((status, i) => (
+          <WrapItem key={i}>
+            <Button
+              onClick={() =>
+                toast({
+                  title: `${status} toast`,
+                  status: status,
+                  position: 'top',
+                  // color:'white',
+                  variant: 'subtle',
+                  isClosable: true,
+                })
+              }
+            >
+              Show {status} toast
+            </Button>
+          </WrapItem>
+        ))}
+      </Wrap>
+    </>
   );
 }

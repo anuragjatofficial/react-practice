@@ -10,12 +10,10 @@ const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 
 root.render(
-  <StrictMode>
-    <ChakraProvider>
-      <ColorModeScript />
-      <App/>
-    </ChakraProvider>
-  </StrictMode>
+  <ChakraProvider>
+    <ColorModeScript />
+    <App />
+  </ChakraProvider>
 );
 
 // If you want your app to work offline and load faster, you can change
